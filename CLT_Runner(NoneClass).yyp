@@ -35,12 +35,18 @@
   },
   "name":"CLT_Runner(NoneClass)",
   "resources":[
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"obj_cutscene","path":"objects/obj_cutscene/obj_cutscene.yy",},},
+    {"id":{"name":"obj_inicio","path":"objects/obj_inicio/obj_inicio.yy",},},
+    {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"rm_cutscene","path":"rooms/rm_cutscene/rm_cutscene.yy",},},
+    {"id":{"name":"scr_globais","path":"scripts/scr_globais/scr_globais.yy",},},
+    {"id":{"name":"spr_cutscene_inicio","path":"sprites/spr_cutscene_inicio/spr_cutscene_inicio.yy",},},
+    {"id":{"name":"spr_steven","path":"sprites/spr_steven/spr_steven.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_cutscene","path":"rooms/rm_cutscene/rm_cutscene.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

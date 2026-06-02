@@ -16,5 +16,9 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"obj_cutscene","order":1,"path":"objects/obj_cutscene/obj_cutscene.yy",},
+    {"name":"obj_inicio","order":2,"path":"objects/obj_inicio/obj_inicio.yy",},
+    {"name":"spr_steven","order":1,"path":"sprites/spr_steven/spr_steven.yy",},
+  ],
 }
