@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_texto",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_texto",
+  "parent":{
+    "name":"Texto",
+    "path":"folders/FUNÇÕES/Texto.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
