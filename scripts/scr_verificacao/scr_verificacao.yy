@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_verificacao",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_verificacao",
+  "parent":{
+    "name":"Verificação",
+    "path":"folders/FUNÇÕES/Verificação.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

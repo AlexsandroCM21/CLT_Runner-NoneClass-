@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_mathe",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_mathe",
+  "parent":{
+    "name":"Mathe",
+    "path":"folders/FUNÇÕES/Mathe.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

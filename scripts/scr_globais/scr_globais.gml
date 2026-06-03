@@ -4,7 +4,7 @@
 //Saber se a cutscene inicial rodou ou não
 global.cutscene_inicio = false;
 
-global.modo = ["inicio", "home"];
+global.modo = [rm_inicio, "home"];
 
 global.slot_save = 1;
 
@@ -37,7 +37,26 @@ function load() {
     //O caminho pro bagulho do save
     var _savefile = string("save({0}).json", global.slot_save);
     
+    //Se o arquivo não existe, vamos parar esta função
+    if (!file_exists(_savefile)) return;
+
+    
     //Carregando o buffer
     var _buffer = buffer_load(_savefile);
     
+    //Lendo os dados do meu buffer
+    var _leitura = buffer_read(_buffer, buffer_string);
+    
+    //Transformando a leitura do buffer em struct
+    var _struct = json_parse(_leitura);
+    
+    #region DADOS
+    //Vendo se a cutscene inicio já iniciou
+    global.cutscene_inicio = _struct.cutscene_inicio;
+    
+    
+    #endregion DADOS
+    
+    //Depois de tudo, deletando meu buffer
+    buffer_delete(_buffer);
 }
