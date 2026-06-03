@@ -5,9 +5,7 @@ indo = false;
 
 metodo_verify_room = function(_mode0, _mode1) {
     //Se não for igual, então vamos voltar
-    /*!fct_modo_equals(_mode0, _mode1) or */
-    
-    if (indo) return;
+    if (!fct_modo_equals(_mode0, _mode1) or indo) return;
     
     //Se a minha room de agora não for igual a room que tem que ser,
     // vamos fazer ela ser.

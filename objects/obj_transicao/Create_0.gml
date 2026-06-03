@@ -18,3 +18,5 @@ comecar_transicao_2 = false;
 
 //Variável de controle para saber se eu devo deixar a tela totalmente escura
 escurecer_tudo = false;
+
+

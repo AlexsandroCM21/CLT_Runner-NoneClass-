@@ -21,8 +21,32 @@ function fct_modo_equals(_mode0 = noone, _mode1 = noone) {
 
 //Função para saber se a animação da sprite acabou
 function acabou_animacao() {
-    var _spd_img=sprite_get_speed(sprite_index) / FPS;
+    var _spd_img=sprite_get_speed(sprite_index) / game_get_speed(gamespeed_fps);
     if(image_index+_spd_img>=image_number){
         return true;
     }
 }
+
+///@desc Volta o valor necessário para que o image_scale dê exatamente o que precisa
+function back_scale(_sprite, _w, _h) {
+    var _height;
+    var _width;
+    
+    if (is_array(_sprite)) {
+        _width = _sprite[0];
+        _height = _sprite[1];
+    }
+    else {
+        _height = sprite_get_height(_sprite);
+        _width = sprite_get_width(_sprite);
+    }
+    
+    
+    var _xscale = (_w/_width);
+    var _yscale = (_h/_height);
+    show_message(_width)
+    var _send = [_xscale, _yscale];
+    
+    return _send;
+}
+

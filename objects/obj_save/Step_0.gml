@@ -27,6 +27,6 @@ image_alpha  = lerp(image_alpha, 1, .1)
 
 
 if (pressing) {
-    global.modo = ["cutscene", "home"];
+    global.modo = [rm_cutscene, "home"];
     load();
 }

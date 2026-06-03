@@ -10,12 +10,13 @@ function cria_transicao_inicia(_destino = noone)
 {
     if (!room_exists(_destino)) 
     {
-        show_message("defina um destino")
+        show_message("defina um destino");
         return;
     }
     
     //Criando o objeto transição
     var _transicao = instance_create_depth(0, 0, 0, obj_transicao, { destino: _destino});
+    
     
 }
 
@@ -36,7 +37,9 @@ function fazendo_transicao(_sq = sq_transicao_1)
     var _cam_x = camera_get_view_x(view_camera[0]);
     var _cam_y = camera_get_view_y(view_camera[0]);
 
-    layer_sequence_create("transicao", _cam_x, _cam_y, _sq);
+    var _seq = layer_sequence_create("transicao", _cam_x, _cam_y, _sq);
+    
+    
 }
 
 
@@ -48,3 +51,4 @@ function destruindo_layer_transicao()
         layer_destroy("transicao");
     }
 }
+
