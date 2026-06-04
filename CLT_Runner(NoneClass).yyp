@@ -69,6 +69,7 @@
     {"id":{"name":"scribble_fallback_font","path":"fonts/scribble_fallback_font/scribble_fallback_font.yy",},},
     {"id":{"name":"Como usar","path":"notes/Como usar/Como usar.yy",},},
     {"id":{"name":"obj_cutscene","path":"objects/obj_cutscene/obj_cutscene.yy",},},
+    {"id":{"name":"obj_hud","path":"objects/obj_hud/obj_hud.yy",},},
     {"id":{"name":"obj_inicio","path":"objects/obj_inicio/obj_inicio.yy",},},
     {"id":{"name":"obj_mode","path":"objects/obj_mode/obj_mode.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},

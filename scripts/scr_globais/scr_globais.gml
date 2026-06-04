@@ -8,6 +8,8 @@ global.modo = [rm_inicio, "home"];
 
 global.slot_save = 1;
 
+global.fullscreen = false;
+
 function save() {
     //O caminho pro bagulho do save
     var _savefile = string("save({0}).json", global.slot_save);

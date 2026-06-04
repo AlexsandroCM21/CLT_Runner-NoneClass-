@@ -45,6 +45,7 @@
   "ResourceOrderSettings":[
     {"name":"scribble_fallback_font","order":24,"path":"fonts/scribble_fallback_font/scribble_fallback_font.yy",},
     {"name":"obj_cutscene","order":1,"path":"objects/obj_cutscene/obj_cutscene.yy",},
+    {"name":"obj_hud","order":5,"path":"objects/obj_hud/obj_hud.yy",},
     {"name":"obj_inicio","order":2,"path":"objects/obj_inicio/obj_inicio.yy",},
     {"name":"obj_mode","order":4,"path":"objects/obj_mode/obj_mode.yy",},
     {"name":"obj_save","order":3,"path":"objects/obj_save/obj_save.yy",},

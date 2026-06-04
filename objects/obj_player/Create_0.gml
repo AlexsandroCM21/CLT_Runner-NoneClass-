@@ -1,9 +1,11 @@
+/// @description Insert description here
+// You can write your code in this editor
 
 //Qual lado que o player está
 lado = 0;
 
-//Posições bagulhadas
-lados = [];
+//Posições horizontais
+posicoes = [0, 160];
 
 
 metodo_keys = function() {
