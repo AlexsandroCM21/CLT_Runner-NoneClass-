@@ -1,10 +1,10 @@
 {
   "$GMNotes":"v1",
-  "%Name":"Como usar",
-  "name":"Como usar",
+  "%Name":"como usar",
+  "name":"como usar",
   "parent":{
-    "name":"Leia aqui",
-    "path":"folders/FUNÇÕES/Transicao/Leia aqui.yy",
+    "name":"How To Use",
+    "path":"folders/FUNÇÕES/Transições/How To Use.yy",
   },
   "resourceType":"GMNotes",
   "resourceVersion":"2.0",

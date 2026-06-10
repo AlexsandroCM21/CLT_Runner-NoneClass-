@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_explosion",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_explosion",
+  "parent":{
+    "name":"Explosion",
+    "path":"folders/FUNÇÕES/Efeitos/Explosion.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

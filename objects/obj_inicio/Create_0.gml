@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-opcoes = ["Jogar", "Opções", "Sair do jogo"];
+opcoes = [];
 index = 0;
 
 //Verificando se eu já criei os botões
@@ -28,6 +28,11 @@ metodo_create_bt = function(_slot) {
 #region ESTADOS
 
 estado_inicio = function() {
+    opcoes = ["Jogar", "Opções", "Sair do jogo"];
+    
+    //Resetando o botões criados
+    criado_botoes = false;
+    
     //Se eu apertei enter
     if (enter) {
         //Switch's, possibilidades que o index pode ter

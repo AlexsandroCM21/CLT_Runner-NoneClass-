@@ -1,14 +1,35 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+randomize();
 
-//Saber se a cutscene inicial rodou ou não
-global.cutscene_inicio = false;
 
-global.modo = [rm_inicio, "home"];
-
-global.slot_save = 1;
-
-global.fullscreen = false;
+//Globais que são redefinidas
+function redefinindo_globais() {
+    //Saber se a cutscene inicial rodou ou não
+    global.cutscene_inicio = false;
+    
+    global.modo = [rm_inicio, "home"];
+    
+    global.slot_save = 1;
+    
+    global.player_alive = true;
+    
+    //A velocidade atual do jogo no momento.
+    global.speed = 1;
+    
+    //O multiplicador de pontos
+    global.multipoints = 1;
+    
+    //Os pontos que o jogador fez no jogo
+    global.pontos = 0;
+    
+    global.fullscreen = false;
+    
+    //O máximo de pontos que o player conseguiu chegar
+    global.maxpoints = 0;
+    
+}
+redefinindo_globais();
 
 function save() {
     //O caminho pro bagulho do save
@@ -19,7 +40,8 @@ function save() {
     
     //O struct que vai ser salvo
     var _struct = {
-        cutscene_inicio : global.cutscene_inicio
+        cutscene_inicio : global.cutscene_inicio,
+        maxpoints       : global.maxpoints
     }
     
     //Transformando o meu struct em json para salvar
@@ -56,6 +78,7 @@ function load() {
     //Vendo se a cutscene inicio já iniciou
     global.cutscene_inicio = _struct.cutscene_inicio;
     
+    global.maxpoints = _struct.maxpoints;
     
     #endregion DADOS
     

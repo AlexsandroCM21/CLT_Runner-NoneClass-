@@ -8,6 +8,8 @@ slotsave = 1;
 mouse = false;
 pressing = false;
 
+modo = "save";
+
 x1 = 0;
 y1 = 128;
 dist = 64 + (sprite_height/2);

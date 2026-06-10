@@ -6,6 +6,10 @@ y = y1 + (dist*(slotsave-1))
 
 var _amt = .2;
 
+//Se o meu modo não for igual ao modo de jogo, vou me suicidar
+if (!modo_equals(, modo)) {
+    instance_destroy();
+}
 
 //Se o mouse estiver encostando em mim
 mouse = (position_meeting(mouse_x, mouse_y, id));
@@ -27,6 +31,10 @@ image_alpha  = lerp(image_alpha, 1, .1)
 
 
 if (pressing) {
-    global.modo = [rm_cutscene, "home"];
-    load();
+    var _troca_modo = function(){
+        global.modo = [rm_cutscene, "home"]
+        load();
+    };
+    
+    transicao_create([sq_fadein, sq_fadeout], _troca_modo, rm_cutscene);
 }

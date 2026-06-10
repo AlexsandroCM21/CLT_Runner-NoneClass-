@@ -10,8 +10,8 @@
   "name":"obj_inicio",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Controlers",
+    "path":"folders/Objects/Controlers.yy",
   },
   "parentObjectId":null,
   "persistent":false,

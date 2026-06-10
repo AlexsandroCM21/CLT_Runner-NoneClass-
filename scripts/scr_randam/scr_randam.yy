@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_randam",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_randam",
+  "parent":{
+    "name":"Random",
+    "path":"folders/FUNÇÕES/Random.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

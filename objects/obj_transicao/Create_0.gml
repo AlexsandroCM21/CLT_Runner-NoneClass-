@@ -1,22 +1,41 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
+/// @description Insert description here
+// You can write your code in this editor
 
-//Deixando o objeto persistente, isso garante que ao trocar de room
-//Ele não vai ser destruido para poder criar as duas sequencias
+//Quando um objeto é persistente, ele fica em todas as rooms apartir de agora
 persistent = true;
-//Chamando a função que realmente cria a sequence.
-//Este objeto só é usado para ser persistente e criar as duas sequences
-//A variável destino dele é criada na função que cria a transição
-fazendo_transicao();
 
-//Definindo o alarme para 30 frames porque a sequencia tem 30 frames
-alarm[0] = 30;
+//Se estou na abertura ou no fechamento da transição
+indo = true;
+
+//Delay para fazer o que precisa ser feito
+delay = 5;
+
+//////O escurecer SERVE PARA SABER SE VAMOS DEIXAR EM TELA PRETA UM POUCO QUANDO TROCAMOS DE CENA
+/// algo "ruim" que esse 'escurecer' pode fazer, é que ele escurece a camera inteira. Mas, 
+/// imagino que isso não será um problema.
+pode_escurecer = true;
+escurecer = false;
+cor_escuro = c_black;
 
 
-//Variável de controle para saber se eu já troquei de level e posso começar a segunda transição
-comecar_transicao_2 = false;
+abertura = noone;
+fechamento = noone;
 
-//Variável de controle para saber se eu devo deixar a tela totalmente escura
-escurecer_tudo = false;
+sequence = noone;
+
+//Metodo para criar sequencias
+metodo_create_sequence = function(_sqid) {
+    //Criando uma layer para a minha transição se eu não tiver uma layer para isso
+    if (!layer_exists("transicao")) {
+        layer_create(-100, "transicao");
+    }
+    
+    //Posições da camera
+    var _cam_x = camera_get_view_x(view_camera[0]);
+    var _cam_y = camera_get_view_y(view_camera[0]);
+    
+    return layer_sequence_create("transicao", _cam_x, _cam_y, _sqid);
+    //show_message(sequence.speed)
+}
 
 

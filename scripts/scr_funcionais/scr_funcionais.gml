@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
 
-function fct_modo_equals(_mode0 = noone, _mode1 = noone) {
+function modo_equals(_mode0 = noone, _mode1 = noone) {
     //Sair se os bagulho for noone
     if (_mode0 == noone and _mode1 == noone) return undefined;
     

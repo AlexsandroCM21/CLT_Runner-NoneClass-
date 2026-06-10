@@ -1,7 +1,7 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
-//Depois de passar o tempo da animação da sequence, eu mudo de room
-room_goto(destino);
+/// @description Deletando a abertura
+// You can write your code in this editor
 
-//Avisando que a tela precisa ficar escura
-escurecer_tudo = true;
+//Deletando a sequencia de abertura
+layer_sequence_destroy(abertura);
+//Anulando o abertura
+abertura = noone;

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"trans_funcoes",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"trans_funcoes",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/FUNÇÕES/Transições/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

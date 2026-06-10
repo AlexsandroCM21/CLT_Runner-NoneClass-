@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Sprites",
-    "path":"folders/FUNÇÕES/Transicao/Sprites.yy",
+    "path":"folders/FUNÇÕES/Transições/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

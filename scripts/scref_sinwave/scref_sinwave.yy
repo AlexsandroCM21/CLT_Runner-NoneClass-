@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scref_sinwave",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scref_sinwave",
+  "parent":{
+    "name":"Sinwave",
+    "path":"folders/FUNÇÕES/Efeitos/Sinwave.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
