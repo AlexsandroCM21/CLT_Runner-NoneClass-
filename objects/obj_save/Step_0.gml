@@ -33,8 +33,15 @@ image_alpha  = lerp(image_alpha, 1, .1)
 if (pressing) {
     var _troca_modo = function(){
         global.modo = [rm_cutscene, "home"]
+        
         load();
     };
+    global.slot_save = slotsave;
+    load();
+    show_message(global.cutscene_inicio)
+    destino = rm_cutscene;
+    //Se a cutscene já rodou, o destino vai ser o game
+    if (global.cutscene_inicio) destino = rm_game;
     
-    transicao_create([sq_fadein, sq_fadeout], _troca_modo, rm_cutscene);
+    transicao_create([sq_fadein, sq_fadeout], _troca_modo, destino);
 }

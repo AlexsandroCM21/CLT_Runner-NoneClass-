@@ -46,7 +46,11 @@ pontos = 0;
 
 x2 = 1;
 
+vspeed = 1;
+
 
 posicoes = [24, 160]
 
 lado = choose(false, true);
+//Pegando minha posição horizontal
+x = posicoes[lado];

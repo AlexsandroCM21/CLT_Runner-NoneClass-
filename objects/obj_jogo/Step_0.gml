@@ -14,6 +14,10 @@ if (global.pontos > global.maxpoints) {
     global.maxpoints = global.pontos;
 }
 
+metodo_atualiza_vel();
+
+//Limitando a velocidade de spawn
+time_to_spawn = clamp(time_to_spawn, spawn_min, 10000000000000000000000000);
 
 //Se morri, vamos parar tudo!
 if (modo_equals(, "morte")) {
@@ -22,7 +26,7 @@ if (modo_equals(, "morte")) {
     
     //Zerando a velocidade da room.
     layer_background_speed(_back, 0);
-    layer_vspeed(_layer, 0)
+    layer_vspeed(_layer, 0);
     
     //Desligando o criamento de comida e clts
     pode_criar = false;
@@ -31,7 +35,7 @@ if (modo_equals(, "morte")) {
     if (instance_exists(obj_food)) obj_food.speed = 0;
     
     //Se eu não criei o modo de morte, vamos criar
-    if (!criei_morte){
+    if (!criei_morte and !instance_exists(obj_morte)){
         instance_create_layer(x, y, "hud", obj_morte);
         criei_morte = true;
     }

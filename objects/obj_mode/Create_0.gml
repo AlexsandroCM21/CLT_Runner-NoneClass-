@@ -22,3 +22,5 @@ metodo_verify_room = function(_mode0, _mode1) {
     }
     
 }
+
+

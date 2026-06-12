@@ -4,6 +4,8 @@
 //Pegando os inputs
 metodo_keys();
 
+image_speed = global.speed;
+
 ///O lado do meu personagem vai alterar quando apertar para direita ou para esquerda
 if (right) lado = 1;
 else if(left) lado = 0;

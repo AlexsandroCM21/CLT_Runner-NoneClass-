@@ -14,10 +14,12 @@ x2 = posicoes[lado];
 
 image_xscale = verif_ifline(lado, -1, 1);
 
-
-efeito_sinwave_horizontal(x2, (5 * !image_xscale));
-
-vspeed = 1;
+//Se estou em baixo, ele vai funcionar de uma maneira diferente
+if (image_xscale){
+    efeito_sinwave_horizontal(x2, (3 * image_xscale));
+}else {
+    efeito_sinwave_horizontal(x2, (3));
+}
 
 //Se eu sair da room, vou me matar :)
 if (y > room_height + ats_sprite_sizes()[1]) {

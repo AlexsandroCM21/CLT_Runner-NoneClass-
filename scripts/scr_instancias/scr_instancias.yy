@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_instancias",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_instancias",
+  "parent":{
+    "name":"Instancias",
+    "path":"folders/FUNÇÕES/Instancias.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

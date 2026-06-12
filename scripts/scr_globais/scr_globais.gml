@@ -10,6 +10,8 @@ function redefinindo_globais() {
     
     global.modo = [rm_inicio, "home"];
     
+    global.sequencias_padrao = [sq_fadein, sq_fadeout];
+    
     global.slot_save = 1;
     
     global.player_alive = true;
